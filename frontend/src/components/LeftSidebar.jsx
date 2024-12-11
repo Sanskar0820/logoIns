@@ -24,7 +24,7 @@ const LeftSidebar = () => {
     const logoutHandler = async () => {
         try {
             const res = await axios.get(
-                'http://localhost:8000/api/v1/user/logout',
+                'https://logoinst-u31g.onrender.com/api/v1/user/logout',
                 { withCredentials: true }
             );
             dispatch(setAuthUser(null))

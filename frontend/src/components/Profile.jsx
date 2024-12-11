@@ -23,7 +23,7 @@ const Profile = () => {
 
     const followOrUnfollowHandler = async()=>{
         try {
-            const res=await axios.get(`http://localhost:8000/api/v1/user/followorunfollow/${userId}`, { withCredentials: true })
+            const res=await axios.get(`https://logoinst-u31g.onrender.com/api/v1/user/followorunfollow/${userId}`, { withCredentials: true })
             if(res.data.success){
                 
                 const newUserData ={...user, following: isFollowing ? user.following.filter(id => id !== userId) : [...user.following, userId]}

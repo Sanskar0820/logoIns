@@ -16,7 +16,7 @@ const ChatPage =()=>{
 
     const sendMessageHandler=async (recevierId)=>{
         try {
-            const res= await axios.post(`http://localhost:8000/api/v1/message/send/${recevierId}`,{textMessage},{
+            const res= await axios.post(`https://logoinst-u31g.onrender.com/api/v1/message/send/${recevierId}`,{textMessage},{
                 headers:{
                     "Content-Type":'application/json'
                 },
